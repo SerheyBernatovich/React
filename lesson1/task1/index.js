@@ -1,4 +1,4 @@
-const root = document.querySelector('#root');
+const rootElement = document.querySelector('#root');
 
 const greetingEl = React.createElement(
   'div',
@@ -6,4 +6,4 @@ const greetingEl = React.createElement(
   'Hello, React!'
 );
 
-ReactDOM.render(greetingEl, root);
+ReactDOM.render(greetingEl, rootElement);

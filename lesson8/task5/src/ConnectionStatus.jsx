@@ -9,8 +9,8 @@ class ConnectionStatus extends Component {
     window.addEventListener('offline', this.toggleStatus);
   }
   componentWillUnmount() {
-    window.addEventListener('online', this.toggleStatus);
-    window.addEventListener('offline', this.toggleStatus);
+    window.removeEventListener('online', this.toggleStatus);
+    window.removeEventListener('offline', this.toggleStatus);
   }
   toggleStatus = (e) => {
     this.setState({ status: e.type });

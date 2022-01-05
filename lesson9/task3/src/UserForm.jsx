@@ -15,7 +15,7 @@ class UserForm extends React.Component {
             (acc, [name, value]) => ({ ...acc, [name]: value }),
             {}
           );
-          this.onSubmit(formData);
+          this.props.onSubmit(formData);
         }}
       >
         <h1 className="form-title">Profile</h1>

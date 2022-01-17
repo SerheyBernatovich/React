@@ -4,7 +4,7 @@ const ConnectionStatus = () => {
   const [status, setStatus] = useState('online');
 
   const changeStatus = (e) => {
-    setStatus(e.target);
+    setStatus(e.type);
   };
   useEffect(() => {
     window.addEventListener('offline', changeStatus);

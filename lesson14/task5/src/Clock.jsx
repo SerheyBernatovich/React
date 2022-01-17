@@ -15,7 +15,7 @@ const Clock = ({ location, offset }) => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTime(getTimeWithOffset(this.props.offset).toLocaleTimeString());
+      setTime(getTimeWithOffset(offset).toLocaleTimeString());
     }, 1000);
     return () => clearInterval(intervalId);
   }, []);
